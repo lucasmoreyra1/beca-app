@@ -14,4 +14,13 @@ BecaApp es una aplicación para la gestión de solicitudes de becas. Los usuario
 - Node.js y npm instalados en tu máquina.
 - Un servidor de base de datos SQL (MySQL, etc.).
 - Acceso FTP para cargar los archivos de las solicitudes.
+
+## Inicializacion
+
 - Variables de Entorno: Configurar el archivo `.env` en server2 para almacenar variables de configuración en Node.js.
+- Instalar los paquetes necesarios con npm
+- En node(server2) ejecutar los scipts:
+  - "/sync.js" para generar las tablas
+  - "/config/initAdmin.js" se debe ejecutar para crear un primer usuario administrador en la base de datos con los siguientes datos:
+    Correo electrónico: admin@email.com
+    Contraseña: admin123
